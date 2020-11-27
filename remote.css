@@ -1,0 +1,52 @@
+.base {
+	display: flex;
+	justify-content: center;
+}
+
+.top-group {
+	display: flex;
+	justify-content: right;
+}
+
+.nav-group {
+	padding-top: 20px;
+}
+
+.arrow-row {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.playback-group {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.misc-group-1 {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.app-group {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.app-button img {
+	width: 64px;
+}
+
+.input-group {
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.volume-group {
+	display: flex;
+	justify-content: center;
+}

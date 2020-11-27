@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<title>Roku Remote</title>
+		<link href="remote.css" rel="stylesheet">
+		<script src="remote.js"></script>
+	</head>
+	<body>
+		<center>
+			<table class='base'>
+				<tr>
+					<td>
+						<table class='top-group'>
+							<tr>
+								<td>
+									<button onclick="keypress('PowerOff')">
+										<img src="svg/power-off.svg" />
+									</button>
+								</td>
+								<td>
+									<button onclick="poweron()">
+										<img src="svg/power-on.svg" />
+									</button>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table class='nav-group'>
+							<tr>
+								<td>
+									<button onclick="keypress('Back')">
+										<img src="svg/arrow-left.svg" />
+									</button>
+								</td>
+								<td width="120px" />
+								<td>
+									<button onclick="keypress('Home')">
+										<img src="svg/home.svg" />
+									</button>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table class='arrows-group'>
+							<tr class='arrow-row'>
+								<td>
+									<button onclick="keypress('Up')">
+										<img src="svg/chevron-up.svg" />
+									</button>
+								</td>
+							</tr>
+							<tr class='arrow-row'>
+								<td>
+									<button onclick="keypress('Left')">
+										<img src="svg/chevron-left.svg" />
+									</button>
+								</td>
+								<td width="20px" />
+								<td>
+									<button onclick="keypress('Select')">
+										<span style="font-size: 20px;">OK</span>
+									</button>
+								</td>
+								<td width="20px" />
+								<td>
+									<button onclick="keypress('Right')">
+										<img src="svg/chevron-right.svg" />
+									</button>
+								</td>
+							</tr>
+							<tr class='arrow-row'>
+								<td>
+									<button onclick="keypress('Down')">
+										<img src="svg/chevron-down.svg" />
+									</button>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table class='volume-group'>
+							<tr>
+								<td>
+									<button onclick="keypress('VolumeUp')">
+										<img src="svg/volume-plus.svg" />
+									</button>
+								</td>
+							</tr>
+							<tr height="20px" />
+							<tr>
+								<td>
+									<button onclick="keypress('VolumeDown')">
+										<img src="svg/volume-minus.svg" />
+									</button>
+								</td>
+							</tr>
+							<tr height="30px" />
+							<tr>
+								<td>
+									<button onclick="keypress('VolumeMute')">
+										<img src="svg/volume-mute.svg" />
+									</button>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table class='misc-group-1'>
+							<tr>
+								<td>
+									<button onclick="keypress('InstantReplay')">
+										<img src="svg/undo.svg" />
+									</button>
+								</td>
+								<td width="10px" />
+								<td>
+									<button onclick="keypress('Sleep')">
+										<img src="svg/power-sleep.svg" />
+									</button>
+								</td>
+								<td width="10px" />
+								<td>
+									<button onclick="keypress('Search')">
+										<img src="svg/magnify.svg" />
+									</button>
+								</td>
+								<td width="10px" />
+								<td>
+									<button onclick="keypress('Info')">
+										<img src="svg/asterisk.svg" />
+									</button>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table class='playback-group'>
+							<tr>
+								<td>
+									<button onclick="keypress('Rev')">
+										<img src="svg/rewind.svg" />
+									</button>
+								</td>
+								<td width="30px" />
+								<td>
+									<button onclick="keypress('Play')">
+										<img src="svg/play.svg" />
+									</button>
+								</td>
+								<td width="30px" />
+								<td>
+									<button onclick="keypress('Fwd')">
+										<img src="svg/fast-forward.svg" />
+									</button>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table class='app-group'>
+							<tr>
+								<td>
+									<button class='app-button' onclick="launch(12)">
+										<img src="img/12.jpg" />
+									</button>
+								</td>
+								<td width="10px" />
+								<td>
+									<button class='app-button'  onclick="launch(13)">
+										<img src="img/13.jpg" />
+									</button>
+								</td>
+								<td width="10px" />
+								<td>
+									<button class='app-button'  onclick="launch(837)">
+										<img src="img/837.jpg" />
+									</button>
+								</td>
+							</tr>
+							<tr height="10px" />
+							<tr>
+								<td>
+									<button class='app-button'  onclick="launch(2285)">
+										<img src="img/2285.jpg" />
+									</button>
+								</td>
+								<td width="10px" />
+								<td>
+									<button class='app-button'  onclick="launch(2213)">
+										<img src="img/2213.jpg" />
+									</button>
+								</td>
+								<td width="10px" />
+								<td>
+									<button class='app-button'  onclick="launch(19977)">
+										<img src="img/19977.jpg" />
+									</button>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table class='input-group'>
+							<tr>
+								<td>
+									<button class='app-button' onclick="keypress('InputHDMI1')">
+										<img src="img/tvinput.hdmi.png" />
+									</button>
+								</td>
+								<td width="10px" />
+								<td>
+									<button class='app-button' onclick="keypress('InputHDMI2')">
+										<img src="img/tvinput.hdmi.png" />
+									</button>
+								</td>
+								<td width="10px" />
+								<td>
+									<button class='app-button' onclick="keypress('InputHDMI3')">
+										<img src="img/tvinput.hdmi.png" />
+									</button>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</body>
+<html>
