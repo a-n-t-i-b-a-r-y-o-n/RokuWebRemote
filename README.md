@@ -24,6 +24,9 @@ I was unsatisfied with the existing HomeAssistant Roku remote integrations for t
   
 Despite the fact that it's clearly a method for Roku to charge additional fees for priority due to scarcity, I actually like the physical remote's buttons for individual channels - e.g. my remote has a button for Hulu, Netflix, etc. However, it also has a button for Sling and Roku Movies which I have absolutely no interest in using, and is missing buttons for Roku Media Player, Amazon Prime Video, and Disney+.  
 I decided to make this project resemble the button layouts on the physical remote that came with my TV with a few extra buttons not present there.
+
+## Screenshot
+![Example screenshot](Screenshot1.png)
   
 ## Notes
 Waking completely powered-off devices is done using HomeAssistant, and requires a valid API key from your local instance.  
